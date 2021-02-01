@@ -1,0 +1,94 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+  
+/* BARRA */
+/* --------------------------- */
+#nav{
+    height: 60px;
+}
+
+/* --------------------------- */
+/* BLOQUE 1 */
+/* PRESENTACION */
+#presentacion{
+    width:100%;
+    height:100vh;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    text-align: center;
+    
+}
+#caja{
+    margin: 0;
+    padding: 0;
+}
+
+/* Imagen de presentacion */
+#bg-img{
+    width: 100%;
+    height: 100vh;  
+}
+
+
+/* BLOQUE 2 */
+#skills{
+    height: 440px;
+    background-color: #1e1e1f;
+}
+/* Columnas de Skills */
+.col-sm{
+    margin: 2px;
+    height: 400px;
+    margin-top: 20px;
+    border-style: solid;
+    border-color: honeydew;
+}
+/* caja de skills */
+/* ITEM DE SKILLS */
+#item-1{
+    width: auto;
+    height: 350px;
+    margin: 10px;
+    margin-top: 20px;
+    text-align: center;
+    background-color: grey;
+}
+/* Caja imagen */
+#box-img{
+    height: 150px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    background-color: rebeccapurple;
+   
+}
+/* imagen */
+#img1{
+    width: 275px;
+    height: 150px;
+}
+#box-text{
+    margin-top: 5px;
+    color: white;
+}
+
+
+.bg-dark {
+    background:transparent !important;
+    transition:0.75s ease;
+}
+.bg-dark.scrolled {
+    background:#000 !important;
+}
+
+
+#test{
+    background-color: lightgreen;
+    height: 500px;
+    
+}
