@@ -5,47 +5,111 @@ body{
     height: 100%;
     overflow-x: hidden;
 }
+/* FUENTES */
+@font-face{
+    font-family:'aldo';
+    src: url(fonts/AldotheApache.ttf) format('truetype');
+}
+@font-face{
+    font-family:'regular';
+    src: url(fonts/typewcond_R.ttf) format('truetype');
+}
+@font-face{
+    font-family:'bold';
+    src: url(fonts/typewcond_B.ttf) format('truetype');
+}
+a{
+    text-decoration: none;
+}
   
 /* BARRA */
 /* --------------------------- */
 #nav{
-    height: 60px;
+    height: 40px;
+    background:transparent;
 }
 
 /* --------------------------- */
 /* BLOQUE 1 */
 /* PRESENTACION */
-#presentacion{
+#inicio{
     width:100%;
     height:100vh;
     margin: 0;
     padding: 0;
     background-color: transparent;
     text-align: center;
+    position: relative;
     
 }
-#caja{
+/* MI NOMBRE */
+#box1{
+    width: 100%;
     margin: 0;
     padding: 0;
+    position: absolute;
 }
 
-/* Imagen de presentacion */
+/* Imagen de fondo */
 #bg-img{
     width: 100%;
     height: 100vh;  
+    -webkit-filter: blur(2px);
+    filter: blur(3px);
+    border-style: none;
+
+}
+/* PRESENTACION */
+#box2{
+    background-color: transparent;
+    width: 100% ;
+    height: auto;
+    position: absolute;
+    font-family: 'bold';
+    font-weight: bold;
+    font-size: 30px;
+    color: whitesmoke;
+    margin-top: 15%;
+}
+#btn-mas{
+    padding: 0;
+    margin: 0;
+    width: 150px;
+    height: 40px;
+    font-size: 25px;
+    text-align: center;
+    transition: 0.5s;
+}
+#btn-mas a{
+    color: black;
+    transition: 0.5s;
 }
 
+#presentacion{
+    height: 600px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: grey;
+}
+#box3{
+    margin: 0;
+    padding: 0;
+    margin-top: 7%;
+    position: absolute;
+    background-color: whitesmoke;
+}
 
 /* BLOQUE 2 */
 #skills{
-    height: 440px;
+    height: 540px;
     background-color: #1e1e1f;
 }
 /* Columnas de Skills */
 .col-sm{
     margin: 2px;
     height: 400px;
-    margin-top: 20px;
+    margin-top: 80px;
     border-style: solid;
     border-color: honeydew;
 }
@@ -75,20 +139,13 @@ body{
 #box-text{
     margin-top: 5px;
     color: white;
-}
-
-
-.bg-dark {
-    background:transparent !important;
-    transition:0.75s ease;
-}
-.bg-dark.scrolled {
-    background:#000 !important;
+    font-family: 'regular';
+    font-size: 20px;
 }
 
 
 #test{
-    background-color: lightgreen;
+    background-color: grey;
     height: 500px;
     
 }
