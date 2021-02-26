@@ -11,7 +11,7 @@
     <!-- BARRA SUPERIOR -->
     <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" >
         <div class="container-fluid">
-          <a class="navbar-brand" href="#inicio">Mi protafolio</a>
+          <a class="navbar-brand" href="#home">Mi protafolio</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -27,7 +27,7 @@
                     <a class="nav-link active" href="#webs">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Contacto</a>
+                    <a class="nav-link active" href="#contact">Contacto</a>
                 </li>
             </ul>
           </div>
@@ -35,7 +35,7 @@
     </nav>
     
     <!-- PRESENTACION -->
-    <section>
+    <section id="home">
         <div id="inicio" class="container-fluid">
             <div class="col-12">
                 <div id="box1">
@@ -52,14 +52,14 @@
             </div>
         </div>
     </section>
-    <section id='presentacion' class="container-fluid">
+    <section id='presentacion'>
         
-        <div id="box3" class="col-12">
+        <div id="box3" class="container-fluid col-12">
             <h1 id="text1">Gracias por visitar mi sitio</h1>
             <img id="diamante" src="img/diamond.gif" alt="">
             <br>
             <h3 id="text2">Mi nombre es Francisco Quarñolo, soy un apasionado del desarrollo web y el diseño, actualmente soy 
-                front-end developer Jr  y mis principales 
+                front-end developer Jr y mis principales 
                 tecnologías son: HTML5, CSS3, Javascript y React JS.</h3>
             <br>    
             <a href="#skills-sec"><button id="btn-vamos" type="button" class="btn btn-secondary">VAMOS!</button></a>    
@@ -67,9 +67,6 @@
           
         
     </section>
-    
-        
-    
     <!-- HABILIDADES -->
     <section id="skills-sec">
         <div id="skills" class="row">
@@ -123,7 +120,6 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="#paginas"><button id="btn-vamos2" type="button" class="btn btn-secondary">VAMOS!</button></a>    
                     </div>
                     
                 </div>
@@ -131,61 +127,121 @@
             </div>
         </div>
     </section>
-
+    <!-- PORTFOLIO -->
     <section id="paginas" >
         <div id="webs" class="row">
             <div class="col-12">
                 <div id="web-group" class="container-fluid">
                     <div class="row">
                         <div class="col-4 hover" id="pagina">
-                            <h1>Magtimus</h1>
-                            <img src="img/webs/vilib.png" alt="">
+                            <a href="https://github.com/FranQuarnolo/Vilib" target="blank">
+                                <h1>Vilib</h1>
+                                <img src="img/webs/vilib2.png" alt="">
+                            </a>    
                         </div>
                         <div class="col-4 hover" id="pagina">
-                            <h1>Magtimus</h1>
-                            <img src="img/webs/coffee2.png" alt="">
+                            <a href="https://github.com/FranQuarnolo/CoffeeWave" target="blank"></a>
+                                <h1>Coffee Wave</h1>
+                                <img src="img/webs/coffee2.png" alt="">
+                            </a>
                         </div>
                         <div class="col-4 hover" id="pagina">
-                            <h1>Magtimus</h1>
-                            <img src="img/webs/consul.png" alt="">
+                            <a href="https://github.com/FranQuarnolo/Consultorio-E-M" target="blank">
+                                <h1>Consultorios</h1>
+                                <img src="img/webs/consul2.png" alt="">
+                            </a>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-4 hover" id="pagina">
-                            <h1>Magtimus</h1>
-                            <img src="img/webs/react.png" alt="">
+                            <a href="https://github.com/FranQuarnolo/ComicCity" target="blank"></a>
+                                <h1>E-Commerce</h1>
+                                <img src="img/webs/react.png" alt="">
+                            </a>
                         </div>
                         <div class="col-4 hover" id="pagina">
-                            <h1>Magtimus</h1>
-                            <img src="img/pres.jpg" alt="">
+                            <a href="https://github.com/FranQuarnolo/Biosoft" target="blank">
+                                <h1>BioSoft</h1>
+                                <img src="img/webs/bio.png" alt="">
+                            </a>
                         </div>
                         <div class="col-4 hover" id="pagina">
-                            <h1>Magtimus</h1>
-                            <img src="img/pres.jpg" alt="">
+                            <a href="https://github.com/FranQuarnolo/App-Viajes" target="blank">
+                                <h1>AppViajes</h1>
+                                <img src="img/webs/viajes.png" alt="">
+                            </a>
                         </div>
                     </div>
-                    
+                </div>  
+            </div>  
+        </div>
+    </section>
+    <!-- GIT -->
+    <section id="git-sec">
+        <div class="row">
+            <div class="col-12">
+                <div class="container-fluid" id="git-box">
+                    <p>Mas proyectos en
+                        <a href="https://github.com/FranQuarnolo" target="blank">
+                            <img id="git-img" src="img/git.png">Github
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <!-- CONTACTO -->
+    <section id="contact">
+        <div id="contacto-box" class="row">
+            <div class="col-12">
+                <div id="contacto-info" class="container-fluid">
+                    <br>
+                    <h2>Contáctame!</h2>
+                    <p>No dudes en contactarme por el medio que mas te guste para sacarte todas las dudas!.</p>
+                    <div class="col-12" id="red">
+                        <ul>
+                            <li>
+                                <div class="col-4" id="item-red">
+                                    <a href="https://www.linkedin.com/in/francisco-quar%C3%B1olo-474132164/" target="blank"><img src="img/icons/link.png"></a>
+                                    <p>LinkedIn</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="col-4" id="item-red">
+                                    <a href="#contact"><img src="img/icons/email.png"></a>
+                                    <p>quarnolofrancisco@gmail.com</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="col-4" id="item-red">
+                                    <a href="#contact"><img src="img/icons/telegram.png"></a>
+                                    <p>+54 9 2616573995</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                     
                 </div>
-                
-                
             </div>
-            
-                
-            
         </div>
-        <div id="test"></div>
     </section>
-    <section>
-        <div id="test"></div>
+    <!-- FOOTER -->
+    <section id="footer">
+        <div id="pie" class="row">
+            <div class="col-12">
+                <div class="container-fluid">
+                    <p>Copyright © 2021 - Quarñolo Francisco</p>
+                    <div id="contador">
+                        <img src="img/icons/coffeemug.png">
+                        <br>
+                        <span id="count"></span>
+                        Visitas
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section>
-        <div id="test"></div>
-    </section>
-    
-
-      
-      
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="code.js"></script>
