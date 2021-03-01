@@ -21,7 +21,7 @@ body{
 a{
     text-decoration: none;
 }
-  
+/*----------------------------------------------------------------------------------*/
 /* BARRA */
 /* --------------------------- */
 #nav{
@@ -30,8 +30,18 @@ a{
 }
 .navbar-nav{
     margin-left: 65%;
+    text-align: center;
 }
-
+.collapse{
+    width: 100%;
+    text-align: center;
+}
+.navbar-collapse{
+    
+    background: black;
+    
+}
+/*----------------------------------------------------------------------------------*/
 /* --------------------------- */
 /* BLOQUE 1 */
 /* PRESENTACION */
@@ -40,7 +50,7 @@ a{
     height:100vh;
     margin: 0;
     padding: 0;
-    background-color: transparent;
+    background-color: black;
     text-align: center;
     position: relative;
     
@@ -223,8 +233,10 @@ a{
     color: black;
     transition: 0.5s;
 }
+/*----------------------------------------------------------------------------------*/
 /* SECCION */
 /* PAGINAS */
+/*----------------------------------------------------------------------------------*/
 #webs{
     width: 110%;
     height: 600px;
@@ -249,7 +261,6 @@ a{
     cursor: pointer;
     transition: all 300ms;
 }
-
 
 .hover img{
     width: auto;
@@ -313,8 +324,9 @@ a{
 .hover:hover:after{
     transform: rotate(45deg) translateY(180px) translateX(-80px);
 }
-
+/*----------------------------------------------------------------------------------*/
 /* SECCION GIT */
+/*----------------------------------------------------------------------------------*/
 #git-box{
     height: 60px;
     background-color: grey;
@@ -340,8 +352,10 @@ a{
 #git-img{
     width: 30px;
 }
+/*----------------------------------------------------------------------------------*/
 /* SECCION CONTACTO */
 /* CONTACTO */
+/*----------------------------------------------------------------------------------*/
 #contacto-box{
     width: 100%;
     padding: 0;
@@ -388,8 +402,10 @@ a{
     margin-top: 0px;
     font-size: 20px;
 }
+/*----------------------------------------------------------------------------------*/
 /* SECCION PIE */
 /* FOOTER */
+/*----------------------------------------------------------------------------------*/
 #pie{
     background-color: #1F487E;
     text-align: center;
@@ -412,3 +428,286 @@ a{
     margin-top: -20px;
 }
 
+
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*INCIO RESPONSIVE*/
+/*----------------------------------------------------------------------------------*/
+/*Tablets o dispositivos medianos*/
+
+@media all and (min-width: 600px) and (max-width: 1023px){
+/* BARRA */
+/* --------------------------- */
+#nav{
+    height: 60px;
+}
+.navbar-nav{
+    margin-left: 0%;
+    font-family: 'bold';
+    font-size: 20px;
+}
+.nav-item{
+    text-align: center;
+    border-bottom: solid;
+    border-top: none;
+    border-width: 0.1px;
+    border-color:#1F487E ;
+    border-radius: 2px;
+    background-color: #18181a;
+}
+.navbar-toggler{
+    border-color: white;
+    outline: none;
+}
+
+/* --------------------------- */
+/* BLOQUE 1 */
+/* PRESENTACION */
+#home{
+    margin: 0;
+}
+#inicio{
+    width: 100%;
+    height:100vh;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+/* MI NOMBRE */
+#box1{
+    width: auto;
+}
+/* Imagen de fondo */
+#bg-img{
+    height: auto;  
+}
+/* PRESENTACION */
+#presentacion{
+    height: 500px;
+    margin-top: -20%;
+}
+#box3{
+    height: auto;
+    width: auto;
+    height: auto;
+    margin-left: 0%;
+}    
+#text1{
+    margin-top: 20px;
+}
+/* BLOQUE 2 */
+#skills{
+    height: auto;
+    transition: all 0.5s;
+}
+#servicio{
+    margin-left: 38%;
+}
+/* SECCION */
+/* PAGINAS */
+#pagina{
+    height: auto;
+    padding: 0;
+    margin: 0px;
+    background-color: grey;
+}
+#webs{
+    width: 110%;
+    height: auto;
+}
+#web-group{
+    margin-left: 15%;
+}
+.hover{
+    width: 80vh;
+    height: 100vh;
+}
+.hover img{
+    width: 100%;
+    height: 380px;
+}
+.hover:before,
+.hover:after{
+    content: '';
+    width: 700px;
+    height: 400px;
+}
+/* SECCION GIT */
+#git-box{
+    margin-top: -20px;
+}
+}
+
+
+
+/*----------------------------------------------------------------------------------*/
+/*------------------------------------------------*/
+/*Inicio @Media PHONES*/
+/*------------------------------------------------*/
+@media all and (max-width: 599px){
+/*----------------------------------------------------------------------------------*/
+/* BARRA */
+/* --------------------------- */
+#nav{
+    height: 60px;
+}
+.navbar-nav{
+    margin-left: 0%;
+    font-family: 'bold';
+    font-size: 20px;
+}
+.nav-item{
+    text-align: center;
+    border-bottom: solid;
+    border-top: none;
+    border-width: 0.1px;
+    border-color:#1F487E ;
+    border-radius: 2px;
+    background-color: #18181a;
+}
+.navbar-toggler{
+    border-color: white;
+    outline: none;
+}
+/*----------------------------------------------------------------------------------*/
+/* --------------------------- */
+/* BLOQUE 1 */
+/* PRESENTACION */
+#inicio{
+    width:100%;
+}
+/* MI NOMBRE */
+#box1{
+    height: 350px;
+    background-color: black;
+}
+
+/* Imagen de fondo */
+#bg-img{
+    width: 110%;
+    height: auto; 
+    margin-top: 80px; 
+}
+/* PRESENTACION */
+#box2{
+    width: 100% ;
+    font-size: 15px;
+    margin-top: 25%;
+    
+}
+#btn-mas{
+    height: 40px;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+#presentacion{
+    height: 500px;
+    margin-top: -90%;
+}
+#box3{
+    width: auto;
+    margin-left: 0%;
+}
+#text1{
+    margin-top: 30px;
+    font-size: 22px;
+}
+#diamante{
+    width: 40px;
+}
+#text2{
+    font-size: 18px;
+}
+/* BLOQUE 2 */
+#skills{
+    height: auto;
+}
+#servicio{
+    margin-top: 50px;
+    margin-left: 25%;
+    font-size: 25px;
+}
+/* Columnas de Skills */
+.col-sm{
+    height: 300px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+/* caja de skills */
+/* ITEM DE SKILLS */
+#item-1{
+    width: auto;
+    height: 350px;
+    margin: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+/* Caja imagen */
+#box-img{
+    height: 150px;
+    margin-top: 0;
+    margin-bottom: 5px;   
+}
+#box-text{
+    margin-top:0px;
+    font-size: 15px;
+
+}
+#titulo{
+    font-size: 15px;
+}
+
+/*----------------------------------------------------------------------------------*/
+/* SECCION */
+/* PAGINAS */
+/*----------------------------------------------------------------------------------*/
+#webs{
+    height: auto;
+    margin-left: -18px;
+}
+/*----------------------------------------------------------------------------------*/
+/* SECCION GIT */
+/*----------------------------------------------------------------------------------*/
+#git-box{
+    height: 40px;
+    margin-top: -20px;
+}
+#git-box p{
+    margin-top: 0px;
+    font-size: 22px;
+}
+/*----------------------------------------------------------------------------------*/
+/* SECCION CONTACTO */
+/* CONTACTO */
+/*----------------------------------------------------------------------------------*/
+#contacto{
+    text-align: center;
+}
+#contacto-info h2{
+    margin-top: 20px;
+    font-size: 25px;
+}
+#contacto-info p{
+    margin-top: 30px;
+    font-size: 20px;
+}
+#red ul li{
+    margin-left: -10%;
+    width: 100%;
+}
+
+#item-red{
+    width: 100%;
+    margin-left: 0px;
+}
+#item-red img{
+    width: 70px;
+}
+
+#item-red p {
+    font-size: 18px;
+}
+
+}
