@@ -1,9 +1,9 @@
 body{
-    box-sizing: border-box;
-    padding: 0;
     margin: 0;
-    height: 100%;
-    overflow-x: hidden;
+	padding: 0;
+	margin-top: -20px;
+	position: absolute;
+
 }
 /* FUENTES */
 @font-face{
@@ -26,54 +26,33 @@ a{
 /* --------------------------- */
 #nav{
     height: 40px;
-    background:transparent;
+    width: 100%;
 }
 .navbar-nav{
     margin-left: 65%;
-    text-align: center;
-}
-.collapse{
-    width: 100%;
-    text-align: center;
-}
-.navbar-collapse{
-    
-    background: black;
-    
 }
 /*----------------------------------------------------------------------------------*/
 /* --------------------------- */
 /* BLOQUE 1 */
 /* PRESENTACION */
 #inicio{
-    width:100%;
-    height:100vh;
-    margin: 0;
     padding: 0;
+    margin-top: 60px;
     background-color: black;
-    text-align: center;
     position: relative;
-    
 }
-/* MI NOMBRE */
-#box1{
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-}
-
 /* Imagen de fondo */
 #bg-img{
     width: 100%;
-    height: 100vh;  
+    height: auto;  
     -webkit-filter: blur(2px);
     filter: blur(3px);
     border-style: none;
-
 }
+/* MI NOMBRE */
 /* PRESENTACION */
-#box2{
+#nombre{
+    text-align: center;
     background-color: transparent;
     width: 100% ;
     height: auto;
@@ -103,34 +82,27 @@ a{
     color: black;
     transition: 0.5s;
 }
-
 #btn-mas a{
     color: black;
     transition: 0.5s;
 }
-
-#presentacion{
+/* SECCION QUIEN SOY? */
+/* ------------------------- */
+#info{
+    width: auto;
     height: 600px;
     margin: 0;
     padding: 0;
     position: relative;
-    background-color: #1F487E;
+    background-color: #1F487E; 
     text-align: center;
 }
-#box3{
-    margin: 0;
-    padding: 0;
-    width: 850px;
-    margin-top: 7%;
-    margin-left: 18%;
-    position: absolute;  
-}
 #text1{
+    margin-top: 12%;
     font-family: 'arial';
     font-weight: bold;
     font-size: 32px;
     color: white;
-
 }
 #diamante{
     width: 50px;
@@ -167,29 +139,27 @@ a{
     transition: 0.5s;
 }
 
-/* BLOQUE 2 */
+/* SECCION HABILIDADES/SKILLS */
+/* ------------------------- */
 #skills{
     height: 600px;
+    background-color: white;
+    overflow: hidden;
+    text-align: center;
 }
 #servicio{
     margin-top: 50px;
-    margin-left: 42%;
+    margin-bottom: 20px;
     font-family: 'arial';
     font-weight: bold;
     font-size: 35px;
     color: #1F487E;
 }
-/* Columnas de Skills */
-.col-sm{
-    margin: 2px;
-    height: 400px;
-    margin-top: 40px;
-}
 /* caja de skills */
 /* ITEM DE SKILLS */
 #item-1{
     width: auto;
-    height: 350px;
+    height: 250px;
     margin: 10px;
     margin-top: 20px;
     text-align: center;
@@ -202,8 +172,8 @@ a{
 }
 /* imagen */
 #img1{
-    width: 275px;
-    height: 150px;
+    width: 120px;
+    height: auto;
 }
 #box-text{
     margin-top: 5px;
@@ -215,140 +185,32 @@ a{
 #titulo{
     font-family: 'bold';
     font-size: 25px;
-    color: white;
-}
-#btn-vamos2{
-    padding: 0;
-    margin: 0;
-    width: 150px;
-    height: 40px;
-    margin-top: 20px;
-    margin-left: 44%;
-    font-family: 'bold';
-    font-size: 25px;
-    text-align: center;
-    transition: 0.5s;
-}
-#btn-vamos2 a{
     color: black;
-    transition: 0.5s;
 }
 /*----------------------------------------------------------------------------------*/
-/* SECCION */
-/* PAGINAS */
-/*----------------------------------------------------------------------------------*/
-#webs{
-    width: 110%;
-    height: 600px;
-    margin-left: -25px;
-    background-color: #1F487E;
-    position: relative;
-}
-#pagina{
-    
-    padding: 0;
-    margin: 0px;
-    background-color: grey;
-    border-style: solid;
-    border-width: 0.1px;
-    border-color: black;
-}
-.hover{
-    width: 450px;
-    height: 360px;
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-    transition: all 300ms;
-}
-
-.hover img{
-    width: auto;
-    height: 380px;
-    transition: all 300ms;
-    -webkit-filter: blur(2px);
-    filter: blur(3px);
-}
-
-.hover:hover img{
-    transform: scale(1.6) rotate(10deg);
-}
-
-.hover h1{
-    position: absolute;
-    width: auto;
-    top: 50%;
-    left: 50%;
-    text-align: center;
-    transform: translate(-50%, -50%) scale(0);
-    color: white;
-    z-index: 2;
-    transition: all 600ms cubic-bezier(1,0,0,1);
-    border: 0px solid white;
-    border-radius: 5px;
-    background: #1F487E;
-    padding: 10px
-}
-
-.hover:hover h1{
-     transform: translate(-50%, -50%) scale(1);
-}
-
-.hover:before,
-.hover:after{
-    content: '';
-    width: 500px;
-    height: 400px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #071324;
-    opacity: 0.6;
-    transition: all 600ms cubic-bezier(1,0,0,1);
-    border: 2px solid #071324;
-    z-index: 1;
-}
-
-.hover:before{
-    transform: rotate(45deg) translateY(-550px) translateX(0px);
-}
-
-.hover:after{
-    transform: rotate(45deg) translateY(550px) translateX(-60px);
-}
-
-.hover:hover:before{
-    transform: rotate(45deg) translateY(-240px) translateX(0px);
-}
-
-.hover:hover:after{
-    transform: rotate(45deg) translateY(180px) translateX(-80px);
-}
 /*----------------------------------------------------------------------------------*/
 /* SECCION GIT */
 /*----------------------------------------------------------------------------------*/
-#git-box{
-    height: 60px;
+#git{
+    height: 90px;
     background-color: grey;
-    position: relative;
-    margin-top: 120px;
     text-align: center;
+    padding: 0;
+    margin: 0;
 }
-#git-box p{
-    margin-top: 20px;
+#git p{
+    margin-top: 15px;
     font-family: 'regular';
-    font-size: 30px;
+    font-size: 35px;
     color: white;
 }
-
-#git-box a{
+#git a{
     text-decoration: none;
     color: #1F487E;
 }
-#git-box a:hover{
+#git a:hover{
     text-decoration: underline;
 }
-
 #git-img{
     width: 30px;
 }
@@ -356,15 +218,14 @@ a{
 /* SECCION CONTACTO */
 /* CONTACTO */
 /*----------------------------------------------------------------------------------*/
-#contacto-box{
-    width: 100%;
+#contacto{
+    height: 400px;
     padding: 0;
-    margin-left: 0px;
+    margin: 0;
     text-align: center;
     background-color: whitesmoke;
     font-family: 'arial';
 }
-
 #contacto-info h2{
     margin-top: 30px;
     font-weight: bold;
@@ -375,7 +236,6 @@ a{
     margin-top: 40px;
     font-size: 30px;
 }
-
 #red ul{
     list-style-type: none;
 }
@@ -428,7 +288,6 @@ a{
     margin-top: -20px;
 }
 
-
 /*----------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 /*INCIO RESPONSIVE*/
@@ -436,110 +295,107 @@ a{
 /*Tablets o dispositivos medianos*/
 
 @media all and (min-width: 600px) and (max-width: 1023px){
+/*----------------------------------------------------------------------------------*/
 /* BARRA */
 /* --------------------------- */
 #nav{
     height: 60px;
 }
+#nav a{
+    outline: none;
+}
+.navbar-brand{
+    margin-left: 10px;
+}
 .navbar-nav{
-    margin-left: 0%;
-    font-family: 'bold';
-    font-size: 20px;
+    margin-left: 30%;
 }
 .nav-item{
+    background-color: black;
     text-align: center;
     border-bottom: solid;
     border-top: none;
     border-width: 0.1px;
     border-color:#1F487E ;
     border-radius: 2px;
-    background-color: #18181a;
 }
 .navbar-toggler{
     border-color: white;
     outline: none;
 }
-
+#navbar-toggler-icon{
+    width: 100px;
+    height: 10px;
+}
 /* --------------------------- */
-/* BLOQUE 1 */
-/* PRESENTACION */
-#home{
-    margin: 0;
+#text1{
+    font-size: 25px;
 }
-#inicio{
-    width: 100%;
-    height:100vh;
-    margin: 0;
-    padding: 0;
-    background-color: black;
+#text2{
+    font-size: 20px;
 }
 
-/* MI NOMBRE */
-#box1{
-    width: auto;
-}
-/* Imagen de fondo */
-#bg-img{
-    height: auto;  
-}
-/* PRESENTACION */
-#presentacion{
-    height: 500px;
-    margin-top: -20%;
-}
-#box3{
-    height: auto;
-    width: auto;
-    height: auto;
-    margin-left: 0%;
-}    
-#text1{
-    margin-top: 20px;
-}
-/* BLOQUE 2 */
+/* SECCION HABILIDADES/SKILLS */
+/* ------------------------- */
 #skills{
     height: auto;
-    transition: all 0.5s;
 }
 #servicio{
-    margin-left: 38%;
+    margin-top: 60px;
 }
-/* SECCION */
-/* PAGINAS */
-#pagina{
-    height: auto;
-    padding: 0;
-    margin: 0px;
-    background-color: grey;
-}
-#webs{
-    width: 110%;
-    height: auto;
-}
-#web-group{
-    margin-left: 15%;
-}
-.hover{
-    width: 80vh;
-    height: 100vh;
-}
-.hover img{
-    width: 100%;
-    height: 380px;
-}
-.hover:before,
-.hover:after{
-    content: '';
-    width: 700px;
-    height: 400px;
-}
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
 /* SECCION GIT */
-#git-box{
+/*----------------------------------------------------------------------------------*/
+#git{
+    height: 90px;
+}
+#git p{
+    margin-top: 15px;
+    font-size: 30px;
+}
+/*----------------------------------------------------------------------------------*/
+/* SECCION CONTACTO */
+/* CONTACTO */
+/*----------------------------------------------------------------------------------*/
+#contacto{
+    height: auto;
+    text-align: center;
+}
+#contacto-info h2{
+    margin-top: 40px;
+    font-size: 25px;
+}
+#contacto-info p{
+    margin-top: 30px;
+    font-size: 20px;
+}
+#red ul li{
+    margin-left: -50px;
+}
+#item-red img{
+    width: 70px;
+}
+/*----------------------------------------------------------------------------------*/
+/* SECCION PIE */
+/* FOOTER */
+/*----------------------------------------------------------------------------------*/
+#pie{
+    height: auto;
+    font-size: 10px;
+}
+#pie p{
+    margin-top: 10px;
+}
+#contador{
+    margin-top: 0px;
+    font-size: 10px;
+}
+#contador img{
+    width: 80px;
     margin-top: -20px;
 }
 }
-
-
 
 /*----------------------------------------------------------------------------------*/
 /*------------------------------------------------*/
@@ -549,165 +405,179 @@ a{
 /*----------------------------------------------------------------------------------*/
 /* BARRA */
 /* --------------------------- */
+body{
+    width: 100%; 
+}
 #nav{
+    width: 100%;
     height: 60px;
+}
+#nav a{
+    outline: none;
+}
+.navbar-brand{
+    margin-left: 10px;
 }
 .navbar-nav{
     margin-left: 0%;
-    font-family: 'bold';
-    font-size: 20px;
 }
 .nav-item{
+    background-color: black;
     text-align: center;
     border-bottom: solid;
     border-top: none;
     border-width: 0.1px;
     border-color:#1F487E ;
     border-radius: 2px;
-    background-color: #18181a;
 }
 .navbar-toggler{
     border-color: white;
     outline: none;
+}
+#navbar-toggler-icon{
+    width: 100px;
+    height: 10px;
 }
 /*----------------------------------------------------------------------------------*/
 /* --------------------------- */
 /* BLOQUE 1 */
 /* PRESENTACION */
 #inicio{
-    width:100%;
+    width: 100%;
+    height: auto;
+    margin-top: 20%;
+    text-align: center;
 }
-/* MI NOMBRE */
-#box1{
-    height: 350px;
-    background-color: black;
-}
-
 /* Imagen de fondo */
 #bg-img{
-    width: 110%;
-    height: auto; 
-    margin-top: 80px; 
+    width: 100%; 
 }
+/* MI NOMBRE */
 /* PRESENTACION */
-#box2{
+#nombre{
+    text-align: center;
     width: 100% ;
-    font-size: 15px;
-    margin-top: 25%;
-    
+    margin-top: 28%;
 }
-#btn-mas{
-    height: 40px;
-    margin-top: 15px;
-    font-size: 20px;
-}
-
-#presentacion{
-    height: 500px;
-    margin-top: -90%;
-}
-#box3{
-    width: auto;
-    margin-left: 0%;
-}
-#text1{
-    margin-top: 30px;
+#nombre h1{
     font-size: 22px;
 }
+#nombre h2{
+    font-size: 20px;
+}
+#btn-mas{
+    width: 100px;
+    height: 35px;
+    margin-top: 8px;
+    font-size: 20px;
+    padding: -8px;
+}
+
+/* SECCION QUIEN SOY? */
+/* ------------------------- */
+#info{
+    width: 100%;
+    height: 600px;
+}
+#text1{
+    margin-top: 25%;
+    font-size: 23px;
+}
 #diamante{
-    width: 40px;
+    width: 30px;
 }
 #text2{
+    margin-top: 30px;
+    padding: 8px;
     font-size: 18px;
 }
-/* BLOQUE 2 */
+#btn-vamos{
+    width: 100px;
+    height: 35px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+/* SECCION HABILIDADES/SKILLS */
+/* ------------------------- */
 #skills{
+    width: 100%;
     height: auto;
 }
 #servicio{
-    margin-top: 50px;
-    margin-left: 25%;
-    font-size: 25px;
-}
-/* Columnas de Skills */
-.col-sm{
-    height: 300px;
-    margin-top: 0px;
-    margin-bottom: 20px;
+    margin-top: 25%;
+    font-size: 30px;
 }
 /* caja de skills */
 /* ITEM DE SKILLS */
 #item-1{
     width: auto;
-    height: 350px;
-    margin: 10px;
-    margin-top: 20px;
-    text-align: center;
-}
-/* Caja imagen */
-#box-img{
-    height: 150px;
-    margin-top: 0;
-    margin-bottom: 5px;   
-}
-#box-text{
-    margin-top:0px;
-    font-size: 15px;
-
+    height: auto;
+    margin: 0px;
+    margin-top: 10px;
 }
 #titulo{
-    font-size: 15px;
+    font-size: 18px;
 }
-
 /*----------------------------------------------------------------------------------*/
-/* SECCION */
-/* PAGINAS */
-/*----------------------------------------------------------------------------------*/
-#webs{
-    height: auto;
-    margin-left: -18px;
-}
 /*----------------------------------------------------------------------------------*/
 /* SECCION GIT */
 /*----------------------------------------------------------------------------------*/
-#git-box{
-    height: 40px;
-    margin-top: -20px;
+#git{
+    width: 100%;
+    height: auto;
 }
-#git-box p{
-    margin-top: 0px;
-    font-size: 22px;
+#git p{
+    margin-top: 15px;
+    font-size: 23px;
 }
 /*----------------------------------------------------------------------------------*/
 /* SECCION CONTACTO */
 /* CONTACTO */
 /*----------------------------------------------------------------------------------*/
 #contacto{
-    text-align: center;
+    width: 100%;
+    height: auto;
 }
 #contacto-info h2{
-    margin-top: 20px;
+    margin-top: 15%;
     font-size: 25px;
 }
 #contacto-info p{
-    margin-top: 30px;
-    font-size: 20px;
-}
-#red ul li{
-    margin-left: -10%;
-    width: 100%;
-}
-
-#item-red{
-    width: 100%;
-    margin-left: 0px;
-}
-#item-red img{
-    width: 70px;
-}
-
-#item-red p {
+    margin-top: 20px;
     font-size: 18px;
 }
+#red ul li{
+    width: 90%;
+    margin-right: 10%;
+}
+#item-red{
+    width: 100%;
+}
+#item-red img{
+    width: 50px;
+    margin-top: 20px;
+}
+/*----------------------------------------------------------------------------------*/
+/* SECCION PIE */
+/* FOOTER */
+/*----------------------------------------------------------------------------------*/
+#pie{
+    height: 90px;
+    font-size: 12px;
+}
+#pie p{
+    margin-top: 2%;
+}
+#contador{
+    margin-top: 0px;
+    font-size: 12px;
+}
+#contador img{
+    width: 70px;
+    margin-top: -32px;
+}
 
 }
+
+
